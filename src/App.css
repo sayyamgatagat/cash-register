@@ -71,4 +71,9 @@
 }
 .transactionGroup{
   margin-bottom: 10px;
+  overflow-y: scroll;
+  height: 300px
+}
+::-webkit-scrollbar { 
+  display: none; 
 }
