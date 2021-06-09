@@ -1,38 +1,74 @@
+*{
+  margin: 0;
+}
 .App {
+  margin-top: 0;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  margin-top: 0;
+  text-align: center;
+  height: 100vh;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading{
+  padding: 4px;
+  border-top: 5px solid #3f51b5;
+  box-shadow: 0 2px 4px -4px gray;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.datetime input{
+  color:#3f51b5 !important ;
+}
+.datetime button{
+  color:#3f51b5 !important ;
+}
+.transactionCard{
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 2px solid gray;
+  justify-content: space-between;
+  padding: 2%;
 }
 
-.App-link {
-  color: #61dafb;
+.final,p ,h6{
+  text-align: start;
+  color: darkgrey !important;
+}
+.credit h6, .credit p{
+  text-align: start;
+  color: rgb(32, 248, 32) !important;
+}
+.debit h6, .debit p{
+  text-align: start;
+  color: rgb(255, 0, 0) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.positive{
+  font-size: 2em;
+  color: rgb(32, 248, 32) !important;
+}
+.negative{
+  font-size: 2em;
+  color: rgb(255, 0, 0) !important;
+}
+
+.remark{
+  font-size: 1.5em;
+}
+
+.savebtn{
+  width: 100%;
+  bottom: 0 !important;
+}
+.heading{
+  color: #3f51b5 !important;
+}
+.uploadButtons{
+  color: #3f51b5 !important;
+}
+.transactionGroup{
+  margin-bottom: 10px;
 }
