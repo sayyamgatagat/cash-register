@@ -56,7 +56,8 @@ function App() {
         };
         const newdate = selectedDate.toLocaleDateString("en-IN", options);
         const type = amount >= 0 ? "credit" : "debit";
-        const newTransaction = { amount, remark, date: newdate, type };
+        const time = selectedDate.toTimeString();
+        const newTransaction = { amount, remark, date: newdate, type, time };
         if (!amount || !remark) {
             return window.alert("Enter valid Transaction");
         }

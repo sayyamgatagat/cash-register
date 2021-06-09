@@ -4,12 +4,10 @@ import Transaction from "./transaction";
 
 function ViewTransaction() {
     const [transactions, setTransactions] = useState([]);
-    const [loading, setLoading] = useState(false);
 
     const ref = firebase.firestore().collection("transactions");
 
     function getTransactions() {
-        setLoading(true);
         ref.onSnapshot((querySnapshot) => {
             const items = [];
             querySnapshot.forEach((transaction) => {

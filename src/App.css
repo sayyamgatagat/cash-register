@@ -77,3 +77,6 @@
 ::-webkit-scrollbar { 
   display: none; 
 }
+.makeTransaction{
+  margin-top:10px;
+}
